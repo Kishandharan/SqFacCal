@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sq calculator</title>
+</head>
+<body>
+	<h1>Square calculator</h1>	
+	<form method="POST">
+		{% csrf_token %}
+		{{form.as_p}}
+	</form>
+	{% if param1 %}
+	<p>Square of {{param3}} is {{param1}}</p>
+	<p>Factorial of {{param3}} is {{param2}}</p>
+	{% endif %}
+</body>
+</html>
